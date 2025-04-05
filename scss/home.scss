@@ -1,0 +1,87 @@
+@import "partials/root";
+@import "partials/utils";
+
+#HeroSection {
+    // height: fit-content(nvw(900px));
+    background-color: none;
+    background-image: url('../public/assets/media/hero-bg.png');
+    height: nvw(900px);
+    width: 100%;
+    display: flex;
+    // background: url('../public/assets/media/hero-bg.png') center cover;
+
+    h1 {
+        width: fit-content;
+        margin: auto;
+        align-self: center;
+        text-transform: uppercase;
+        font-size: nvw(111px);
+        text-align: center;
+        align-items: center;
+    }
+
+    img {
+        position: absolute;
+        width: 100%;
+        height: inherit;
+        z-index: -2;
+    }
+
+
+}
+
+h3 {
+    font-family: 'Corinthia';
+    font-size: nvw(100px);
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 3vw;
+}
+
+#CelebratingLife {
+    width: 80vw;
+    padding: 5vw;    
+
+    p {
+        font-size: nvw(23px);
+    }
+}
+
+#PhotoGallerySection {
+    // width: 100%;
+    .photo-gallery-container {
+        margin-block: 5vw;
+        display: grid;
+        // grid-template-columns: repeat(5, minmax(330px, 660px));
+        grid-template-columns: repeat(5, minmax(0.073vw*330, 0.073vw*660));
+        gap: 1rem;
+        // overflow-x: scroll;
+        transform: translateX(-1 * nvw(18px));
+        div {
+            aspect-ratio: 1 / 0.71;
+        }
+        img {
+            height: 100%;
+        }
+    }
+
+    .photo-gallery-container > :nth-child(1) > img,
+    .photo-gallery-container > :nth-child(6) > img {
+        float: right;
+    }
+
+    button {
+        width: nvw(320px);
+        height: nvw(80px);
+        display: block;
+        margin: auto;
+        margin-block: 6vw;
+        border: 3px solid #DD9726;
+        font-size: nvw(28px);
+        color: white;
+        background-color: black;
+        cursor: pointer;
+    }
+}
+
+

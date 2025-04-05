@@ -1,0 +1,147 @@
+/*
+Figma Design Reference made on 1920px width,
+According to my screen width of 1366px
+1px = 1366/1920 = 0.71
+also, my screen 1px = 100vw/1366 = 0.073vw
+Calculation of vw value according to n number of pixels
+so, n-vw = 100vw/1920 * N
+where n is num. pixels of 1920 layout 
+
+
+/* 1. Variables */
+/* 2. Functions */
+/* 3. Mixins */
+/* 4. Pseudo-Classes */
+@import url("https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.ref-line {
+  border: 3px gray dashed;
+}
+
+@font-face {
+  font-family: "Bodini";
+  src: url("../assets/fonts/Bodoni.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Bodini";
+}
+
+body {
+  width: 100vw;
+  color: white;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+h3 {
+  font-size: clamp(3.927vw - 25%, 3.927vw, 3.927vw + 25%);
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 3vw;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/*
+Figma Design Reference made on 1920px width,
+According to my screen width of 1366px
+1px = 1366/1920 = 0.71
+also, my screen 1px = 100vw/1366 = 0.073vw
+Calculation of vw value according to n number of pixels
+so, n-vw = 100vw/1920 * N
+where n is num. pixels of 1920 layout 
+
+
+/* 1. Variables */
+/* 2. Functions */
+/* 3. Mixins */
+/* 4. Pseudo-Classes */
+#HeroSection {
+  background-color: none;
+  background-image: url("../public/assets/media/hero-bg.png");
+  height: 45.9vw;
+  width: 100%;
+  display: flex;
+}
+#HeroSection h1 {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  align-self: center;
+  text-transform: uppercase;
+  font-size: 5.661vw;
+  text-align: center;
+  align-items: center;
+}
+#HeroSection img {
+  position: absolute;
+  width: 100%;
+  height: inherit;
+  z-index: -2;
+}
+
+h3 {
+  font-family: "Corinthia";
+  font-size: 5.1vw;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 3vw;
+}
+
+#CelebratingLife {
+  width: 80vw;
+  padding: 5vw;
+}
+#CelebratingLife p {
+  font-size: 1.173vw;
+}
+
+#PhotoGallerySection .photo-gallery-container {
+  margin-block: 5vw;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(24.09vw, 48.18vw));
+  gap: 1rem;
+  transform: translateX(-0.918vw);
+}
+#PhotoGallerySection .photo-gallery-container div {
+  aspect-ratio: 1/0.71;
+}
+#PhotoGallerySection .photo-gallery-container img {
+  height: 100%;
+}
+#PhotoGallerySection .photo-gallery-container > :nth-child(1) > img,
+#PhotoGallerySection .photo-gallery-container > :nth-child(6) > img {
+  float: right;
+}
+#PhotoGallerySection button {
+  width: 16.32vw;
+  height: 4.08vw;
+  display: block;
+  margin: auto;
+  margin-block: 6vw;
+  border: 3px solid #DD9726;
+  font-size: 1.428vw;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}

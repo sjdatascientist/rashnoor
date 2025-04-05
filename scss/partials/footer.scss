@@ -1,0 +1,66 @@
+@import "root";
+@import "utils";
+
+footer {
+    height: auto;
+    padding: 7vw;
+    background-color: $secondary-color;
+    @include flex-behaviour($justify: space-between);
+    align-items: flex-start;
+
+    h4 {
+        font-size: nvw(32px);
+        margin-bottom: 2vw;
+    }
+
+    p, a {
+        font-size: nvw(23px);
+    }
+
+    div {
+        width: 33%;
+        height: nvw(350px);
+        @include flex-behaviour(inline-flex, column, space-between, start);
+    }
+
+    div.end-logo {
+        img {
+            width: nvw(142px);
+            height: auto;
+            margin-bottom: 2vw;
+        }
+        p {
+            width: 80%;
+        }
+    }
+
+    div.quick-links {
+        align-items: center;
+        ul {
+            height: 80%;
+            @include flex-behaviour(inline-flex, column, space-between, start);
+
+            li {
+                transition: transform 0.5s ease-in-out;
+                &:hover {
+                    transform: translateX(-10px);
+                }
+
+                a {
+                    &:hover {
+                        color: $tertiary-color;
+                    }
+                }
+                
+            }
+        }
+        
+    }
+
+    div.office {
+        p {
+            width: auto;
+            height: 80%;
+        }
+    }
+}

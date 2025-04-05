@@ -1,0 +1,42 @@
+@use "sass:math";
+
+/*
+Figma Design Reference made on 1920px width,
+According to my screen width of 1366px
+1px = 1366/1920 = 0.71
+also, my screen 1px = 100vw/1366 = 0.073vw
+Calculation of vw value according to n number of pixels
+so, n-vw = 100vw/1920 * N
+where n is num. pixels of 1920 layout 
+
+
+/* 1. Variables */
+$secondary-color: #2B1111;
+$tertiary-color: #DD9726;
+
+
+/* 2. Functions */
+@function nvw($size) {
+    // size parameter takes values in px(but don't add suffix)
+    $nvw: 0.051vw * $size / 1px;
+    @return $nvw;
+}
+
+
+@function dynamic-font($size, $pct-change) {
+    // Enter size in vw and pct-change in %
+    $font-size: clamp($size - $pct-change, $size, $size + $pct-change);
+    @return $font-size;
+}
+
+
+/* 3. Mixins */
+@mixin flex-behaviour($display: flex, $direction: row, $justify, $alignment: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $alignment;
+}
+
+
+/* 4. Pseudo-Classes */

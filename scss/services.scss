@@ -1,0 +1,46 @@
+@import "partials/utils";
+@import "partials/root";
+
+$odd-item-color: #2B2A11;
+$even-item-color: #2B1111;
+
+#ServicesSection {
+    width: 75vw;
+    margin-block-start: 5vw;
+    margin-block-end: 10vw;
+
+    .services-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 33.33%);
+        gap: 2vw;
+        > :nth-child(odd) {
+            background-color: $odd-item-color;
+        }
+        > :nth-child(even) {
+            background-color: $even-item-color;
+        }
+        
+        div {
+            padding: 3vw;
+            aspect-ratio: 1 / 1;
+            img {
+                width: 100%;
+                height: auto;
+                margin-bottom: 3vw;
+                transition: scale 0.5s ease-out;
+                &:hover {
+                    scale: 1.2;
+                }
+            }
+            h5 {
+                // display: none;
+                font-size: nvw(28px);
+                width: fit-content;
+                margin: auto;
+                text-align: center;
+                height: 30px;
+            }
+        }
+    }
+}

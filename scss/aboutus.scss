@@ -1,0 +1,33 @@
+@import "partials/root";
+@import "partials/utils";
+
+#WatchVideoSection {
+    height: auto;
+    width: 85vw;
+    padding: 4vw;
+
+    video {
+        width: 370px;
+        height: 80px;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+#AboutSection {
+    width: 90vw;
+    padding: 3vw;
+
+    h3 + p {
+        margin-bottom: 3vw;
+    }
+
+    p {
+        font-size: max(10px, nvw(23px));
+    }
+}
+
+
+

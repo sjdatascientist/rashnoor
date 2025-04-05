@@ -1,0 +1,115 @@
+/*
+Figma Design Reference made on 1920px width,
+According to my screen width of 1366px
+1px = 1366/1920 = 0.71
+also, my screen 1px = 100vw/1366 = 0.073vw
+Calculation of vw value according to n number of pixels
+so, n-vw = 100vw/1920 * N
+where n is num. pixels of 1920 layout 
+
+
+/* 1. Variables */
+/* 2. Functions */
+/* 3. Mixins */
+/* 4. Pseudo-Classes */
+/*
+Figma Design Reference made on 1920px width,
+According to my screen width of 1366px
+1px = 1366/1920 = 0.71
+also, my screen 1px = 100vw/1366 = 0.073vw
+Calculation of vw value according to n number of pixels
+so, n-vw = 100vw/1920 * N
+where n is num. pixels of 1920 layout 
+
+
+/* 1. Variables */
+/* 2. Functions */
+/* 3. Mixins */
+/* 4. Pseudo-Classes */
+@import url("https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.ref-line {
+  border: 3px gray dashed;
+}
+
+@font-face {
+  font-family: "Bodini";
+  src: url("../assets/fonts/Bodoni.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Bodini";
+}
+
+body {
+  width: 100vw;
+  color: white;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+h3 {
+  font-size: clamp(3.927vw - 25%, 3.927vw, 3.927vw + 25%);
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 3vw;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#ServicesSection {
+  width: 75vw;
+  margin-block-start: 5vw;
+  margin-block-end: 10vw;
+}
+#ServicesSection .services-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 33.33%);
+  gap: 2vw;
+}
+#ServicesSection .services-container > :nth-child(odd) {
+  background-color: #2B2A11;
+}
+#ServicesSection .services-container > :nth-child(even) {
+  background-color: #2B1111;
+}
+#ServicesSection .services-container div {
+  padding: 3vw;
+  aspect-ratio: 1/1;
+}
+#ServicesSection .services-container div img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 3vw;
+  transition: scale 0.5s ease-out;
+}
+#ServicesSection .services-container div img:hover {
+  scale: 1.2;
+}
+#ServicesSection .services-container div h5 {
+  font-size: 1.428vw;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  text-align: center;
+  height: 30px;
+}
