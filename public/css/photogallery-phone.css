@@ -1,0 +1,102 @@
+/*
+Figma Design Reference made on 1920px width,
+According to my screen width of 1366px
+1px = 1366/1920 = 0.71
+also, my screen 1px = 100vw/1366 = 0.073vw
+Calculation of vw value according to n number of pixels
+so, n-vw = 100vw/1920 * N
+where n is num. pixels of 1920 layout 
+
+
+/* 1. Variables */
+/* 2. Functions */
+/* 3. Mixins */
+/* 4. Pseudo-Classes */
+/*
+Figma Design Reference made on 1920px width,
+According to my screen width of 1366px
+1px = 1366/1920 = 0.71
+also, my screen 1px = 100vw/1366 = 0.073vw
+Calculation of vw value according to n number of pixels
+so, n-vw = 100vw/1920 * N
+where n is num. pixels of 1920 layout 
+
+
+/* 1. Variables */
+/* 2. Functions */
+/* 3. Mixins */
+/* 4. Pseudo-Classes */
+@import url("https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.ref-line {
+  border: 3px gray dashed;
+}
+
+@font-face {
+  font-family: "Bodini";
+  src: url("../assets/fonts/Bodoni.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Bodini";
+}
+
+body {
+  width: 100vw;
+  color: white;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+h3 {
+  font-size: clamp(49.203px, 3.927vw, 60.137px);
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 3vw;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  cursor: pointer;
+}
+
+button.view-more-btn {
+  width: 16.32vw;
+  height: 4.08vw;
+  display: block;
+  margin: auto;
+  margin-block: 6vw;
+  border: max(1px, 0.153vw) solid #DD9726;
+  font-size: 1.428vw;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 320px) and (max-width: 620px) {
+  #PhotoGalleryMainSection {
+    width: 95%;
+  }
+  #PhotoGalleryMainSection .photo-gallery-main-container {
+    grid-template-columns: repeat(1, 23.664vw);
+  }
+}

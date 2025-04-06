@@ -39,7 +39,9 @@ body {
 }
 
 h3 {
-    font-size: dynamic-font(nvw(77px), 25%);
+    // font-size: dynamic-size(nvw(77px), 25%);
+    // font-size: calc-font(77px, 10px);
+    font-size: dynamic-size(77px, 33%);
     width: fit-content;
     margin: auto;
     margin-bottom: 3vw;
@@ -52,4 +54,21 @@ ul {
 a {
     text-decoration: none;
     color: white;
+}
+
+button {
+    cursor: pointer;
+}
+
+button.view-more-btn {
+    width: dynamic-size(320px, 25%);
+    height: dynamic-size(80px, 25%);
+    display: block;
+    margin: auto;
+    margin-block: 6vw;
+    border: max(1px, nvw(3px)) solid #DD9726;
+    font-size: dynamic-size(28px, 25%);
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
 }

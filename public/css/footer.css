@@ -45,7 +45,7 @@ body {
 }
 
 h3 {
-  font-size: clamp(3.927vw - 25%, 3.927vw, 3.927vw + 25%);
+  font-size: clamp(36.6289px, 3.927vw, 72.7111px);
   width: -moz-fit-content;
   width: fit-content;
   margin: auto;
@@ -59,6 +59,23 @@ ul {
 a {
   text-decoration: none;
   color: white;
+}
+
+button {
+  cursor: pointer;
+}
+
+button.view-more-btn {
+  width: clamp(170.4px, 16.32vw, 284px);
+  height: clamp(42.6px, 4.08vw, 71px);
+  display: block;
+  margin: auto;
+  margin-block: 6vw;
+  border: max(1px, 0.153vw) solid #DD9726;
+  font-size: clamp(14.91px, 1.428vw, 24.85px);
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 /*
@@ -86,22 +103,22 @@ footer {
   align-items: flex-start;
 }
 footer h4 {
-  font-size: 1.632vw;
+  font-size: clamp(15.2224px, 1.632vw, 30.2176px);
   margin-bottom: 2vw;
 }
 footer p, footer a {
-  font-size: 1.173vw;
+  font-size: clamp(10.9411px, 1.173vw, 21.7189px);
 }
 footer div {
   width: 33%;
   height: 17.85vw;
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
 }
 footer div.end-logo img {
-  width: 7.242vw;
+  width: clamp(67.5494px, 7.242vw, 134.0906px);
   height: auto;
   margin-bottom: 2vw;
 }
@@ -113,7 +130,7 @@ footer div.quick-links {
 }
 footer div.quick-links ul {
   height: 80%;
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
@@ -130,4 +147,24 @@ footer div.quick-links ul li a:hover {
 footer div.office p {
   width: auto;
   height: 80%;
+}
+
+@media (min-width: 320px) and (max-width: 620px) {
+  footer {
+    flex-direction: column;
+    row-gap: 5vw;
+  }
+  footer div {
+    width: 100%;
+    height: auto;
+  }
+  footer div.end-logo p {
+    width: 95%;
+  }
+  footer div.quick-links {
+    align-items: normal;
+  }
+  footer div.quick-links ul {
+    margin-left: 3vw;
+  }
 }

@@ -1,0 +1,24 @@
+@import "partials/utils";
+@import "partials/root";
+
+#PhotoGalleryMainSection {
+    width: 80%;
+
+    h3 {
+        font-family: 'Corinthia';
+    }
+
+    .photo-gallery-main-container {
+        display: grid;
+        grid-template-columns: repeat(3, nvw(464px));
+        justify-content: center;
+        gap: 1vw;
+
+        img {
+            width: 100%;
+        }
+    }
+
+}
+
+@import "responsive/photogallery-phone"

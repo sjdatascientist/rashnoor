@@ -18,21 +18,24 @@ $tertiary-color: #DD9726;
 /* 2. Functions */
 @function nvw($size) {
     // size parameter takes values in px(but don't add suffix)
-    $nvw: 0.051vw * $size / 1px;
+    $nvw: math.div(0.051vw * $size, 1px);
     @return $nvw;
 }
 
-
-@function dynamic-font($size, $pct-change) {
-    // Enter size in vw and pct-change in %
-    $font-size: clamp($size - $pct-change, $size, $size + $pct-change);
-    @return $font-size;
+@function dynamic-size($size, $pct-change: 33%) {
+    // Enter the  ideal size in px which gets converted to vw, acc. to 1920px and pct-change in %
+    // to get font-size according to my screen width
+    $new-size: $size * 0.71;
+    $pct-change-px: math.div($new-size * $pct-change, 100%);
+    $lower-bound: $new-size - $pct-change-px;
+    $upper-bound: $new-size + $pct-change-px;
+    $dynamic-size: clamp($lower-bound, nvw($size), $upper-bound);
+    @return $dynamic-size;
 }
-
 
 /* 3. Mixins */
 @mixin flex-behaviour($display: flex, $direction: row, $justify, $alignment: center) {
-    display: flex;
+    display: $display;
     flex-direction: $direction;
     justify-content: $justify;
     align-items: $alignment;

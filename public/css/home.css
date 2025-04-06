@@ -45,7 +45,7 @@ body {
 }
 
 h3 {
-  font-size: clamp(3.927vw - 25%, 3.927vw, 3.927vw + 25%);
+  font-size: clamp(36.6289px, 3.927vw, 72.7111px);
   width: -moz-fit-content;
   width: fit-content;
   margin: auto;
@@ -59,6 +59,23 @@ ul {
 a {
   text-decoration: none;
   color: white;
+}
+
+button {
+  cursor: pointer;
+}
+
+button.view-more-btn {
+  width: clamp(170.4px, 16.32vw, 284px);
+  height: clamp(42.6px, 4.08vw, 71px);
+  display: block;
+  margin: auto;
+  margin-block: 6vw;
+  border: max(1px, 0.153vw) solid #DD9726;
+  font-size: clamp(14.91px, 1.428vw, 24.85px);
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 /*
@@ -132,16 +149,4 @@ h3 {
 #PhotoGallerySection .photo-gallery-container > :nth-child(1) > img,
 #PhotoGallerySection .photo-gallery-container > :nth-child(6) > img {
   float: right;
-}
-#PhotoGallerySection button {
-  width: 16.32vw;
-  height: 4.08vw;
-  display: block;
-  margin: auto;
-  margin-block: 6vw;
-  border: 3px solid #DD9726;
-  font-size: 1.428vw;
-  color: white;
-  background-color: black;
-  cursor: pointer;
 }

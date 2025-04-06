@@ -4,7 +4,7 @@
 header {
     width: 80vw;
     margin-inline: auto;
-    height: nvw(150px);
+    height: dynamic-size(150px);
     // padding: 1rem;
     @include flex-behaviour($justify: space-between)
 }
@@ -21,8 +21,8 @@ header nav {
 }
 
 header ul {
-    @include flex-behaviour($display: flex-inline, $justify: space-between);
-    font-size: dynamic-font(1.8vw, 25%);
+    @include flex-behaviour($justify: space-between);
+    font-size: dynamic-size(28px, 25%);
 }
 
 header li {
@@ -31,4 +31,10 @@ header li {
 
 header li:hover {
     scale: 1.25;
+}
+
+@media (min-width: 320px) and (max-width: 620px) {
+    header nav {
+        width: 80%;
+    }
 }

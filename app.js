@@ -13,12 +13,28 @@ app.get('/', (req, res) => {
     res.render('home');
 })
 
+app.get('/weddings', (req, res) => {
+    res.render('weddings');
+})
+
+app.get('/events', (req, res) => {
+    res.render('events');
+})
+
 app.get('/services', (req, res) => {
     res.render('services');
 })
 
 app.get('/aboutus', (req, res) => {
     res.render('aboutus');
+})
+
+app.get('/contactus', (req, res) => {
+    res.render('contactus');
+})
+
+app.get('/photogallery', (req, res) => {
+    res.render('photogallery');
 })
 
 const PORT = process.env.PORT || 3000;

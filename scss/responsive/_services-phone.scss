@@ -1,0 +1,8 @@
+@media (min-width: 320px) and (max-width: 620px) {
+    #ServicesSection {
+
+        .services-container {
+            grid-template-columns: repeat(1, 350px);
+        }
+    }
+}

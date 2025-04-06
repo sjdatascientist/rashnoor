@@ -59,7 +59,7 @@ body {
 }
 
 h3 {
-  font-size: clamp(3.927vw - 25%, 3.927vw, 3.927vw + 25%);
+  font-size: clamp(36.6289px, 3.927vw, 72.7111px);
   width: -moz-fit-content;
   width: fit-content;
   margin: auto;
@@ -75,6 +75,23 @@ a {
   color: white;
 }
 
+button {
+  cursor: pointer;
+}
+
+button.view-more-btn {
+  width: clamp(170.4px, 16.32vw, 284px);
+  height: clamp(42.6px, 4.08vw, 71px);
+  display: block;
+  margin: auto;
+  margin-block: 6vw;
+  border: max(1px, 0.153vw) solid #DD9726;
+  font-size: clamp(14.91px, 1.428vw, 24.85px);
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 #ServicesSection {
   width: 75vw;
   margin-block-start: 5vw;
@@ -84,6 +101,7 @@ a {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 33.33%);
+  justify-content: center;
   gap: 2vw;
 }
 #ServicesSection .services-container > :nth-child(odd) {
@@ -106,10 +124,16 @@ a {
   scale: 1.2;
 }
 #ServicesSection .services-container div h5 {
-  font-size: 1.428vw;
+  font-size: clamp(13.3196px, 1.428vw, 26.4404px);
   width: -moz-fit-content;
   width: fit-content;
   margin: auto;
   text-align: center;
   height: 30px;
+}
+
+@media (min-width: 320px) and (max-width: 620px) {
+  #ServicesSection .services-container {
+    grid-template-columns: repeat(1, 350px);
+  }
 }

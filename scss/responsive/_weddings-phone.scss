@@ -1,0 +1,8 @@
+@media (min-width: 320px) and (max-width: 620px) {
+    #WeddingsSection {
+
+        .weddings-gallery-container {
+            grid-template-columns: repeat(1, minmax(300px,400px));
+        }
+    }
+}

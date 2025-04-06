@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/contactus.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <title>Contact Us</title>
+</head>
+<body>
+    <%- include('partials/header') %>
+    
+    <section id="MapSection">
+        <h3>Contact Us</h3>
+        <div id="map"></div>
+    </section>
+
+    <section id="Offices">
+        <div class="abu-dhabi-office">
+            <h5>Abu Dhabi Office</h5>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+        </div>
+        <div class="dubai-office">
+            <h5>Dubai Office</h5>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+            <p>+ 123 456 7890</p>
+        </div>
+    </section>
+
+    <section id="ContactUsFormSection">
+        <h3>Contact Us</h3>
+        <form action="">
+            <input type="text" name="first-name" id="" placeholder="First Name">
+            <input type="text" name="last-name" id="" placeholder="Last Name">
+            <input type="email" name="email" id="" placeholder="Email Address">
+            <textarea id="message" name="message"  placeholder="Your Message"></textarea>
+        </form>
+        <button>Send Message</button>
+    </section>
+
+    <%- include('partials/footer') %>
+
+</body>
+</html>
+
+<script src="../public/js/refLine.js"></script>
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script> -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="../public/js/contactus.js"></script>

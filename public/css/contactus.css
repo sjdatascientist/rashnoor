@@ -1,0 +1,207 @@
+/*
+Figma Design Reference made on 1920px width,
+According to my screen width of 1366px
+1px = 1366/1920 = 0.71
+also, my screen 1px = 100vw/1366 = 0.073vw
+Calculation of vw value according to n number of pixels
+so, n-vw = 100vw/1920 * N
+where n is num. pixels of 1920 layout 
+
+
+/* 1. Variables */
+/* 2. Functions */
+/* 3. Mixins */
+/* 4. Pseudo-Classes */
+/*
+Figma Design Reference made on 1920px width,
+According to my screen width of 1366px
+1px = 1366/1920 = 0.71
+also, my screen 1px = 100vw/1366 = 0.073vw
+Calculation of vw value according to n number of pixels
+so, n-vw = 100vw/1920 * N
+where n is num. pixels of 1920 layout 
+
+
+/* 1. Variables */
+/* 2. Functions */
+/* 3. Mixins */
+/* 4. Pseudo-Classes */
+@import url("https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.ref-line {
+  border: 3px gray dashed;
+}
+
+@font-face {
+  font-family: "Bodini";
+  src: url("../assets/fonts/Bodoni.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Bodini";
+}
+
+body {
+  width: 100vw;
+  color: white;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+h3 {
+  font-size: clamp(36.6289px, 3.927vw, 72.7111px);
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 3vw;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  cursor: pointer;
+}
+
+button.view-more-btn {
+  width: clamp(170.4px, 16.32vw, 284px);
+  height: clamp(42.6px, 4.08vw, 71px);
+  display: block;
+  margin: auto;
+  margin-block: 6vw;
+  border: max(1px, 0.153vw) solid #DD9726;
+  font-size: clamp(14.91px, 1.428vw, 24.85px);
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#MapSection {
+  width: 80vw;
+  height: clamp(428.13px, 45.9vw, 849.87px);
+  margin-block: 2vw;
+  overflow-y: hidden;
+}
+#MapSection #map {
+  width: 100%;
+  height: 650px;
+}
+
+#Offices {
+  width: 80vw;
+  height: auto;
+  margin-block: 2vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#Offices div {
+  padding: 2.5vw;
+  background-color: #2B1111;
+}
+#Offices h5 {
+  font-size: clamp(15.2224px, 1.632vw, 30.2176px);
+  margin-bottom: 3vw;
+}
+#Offices p {
+  font-size: clamp(10.9411px, 1.173vw, 21.7189px);
+}
+#Offices .abu-dhabi-office {
+  width: 40%;
+}
+#Offices .dubai-office {
+  width: 55%;
+}
+#Offices .dubai-office :last-child {
+  font-size: clamp(15.2224px, 1.632vw, 30.2176px);
+  margin-top: 1.5vw;
+}
+
+#ContactUsFormSection {
+  width: 80vw;
+  margin-top: 3vw;
+  margin-bottom: 5vw;
+}
+#ContactUsFormSection h3 {
+  width: 100%;
+  float: left;
+}
+#ContactUsFormSection form input {
+  width: calc((100% - 46px) / 3);
+  height: 3.57vw;
+  padding: 25px;
+  background-color: #262626;
+  border: none;
+}
+#ContactUsFormSection form input::-moz-placeholder {
+  color: white;
+  font-size: clamp(11.4168px, 1.224vw, 22.6632px);
+}
+#ContactUsFormSection form input::placeholder {
+  color: white;
+  font-size: clamp(11.4168px, 1.224vw, 22.6632px);
+}
+#ContactUsFormSection form :nth-child(2) {
+  margin-inline: 20px;
+}
+#ContactUsFormSection form textarea {
+  margin-top: 20px;
+  width: 100%;
+  height: clamp(133.196px, 14.28vw, 264.404px);
+  padding: 25px;
+  background-color: #262626;
+  border: none;
+}
+#ContactUsFormSection form textarea::-moz-placeholder {
+  color: white;
+  font-size: clamp(11.4168px, 1.224vw, 22.6632px);
+}
+#ContactUsFormSection form textarea::placeholder {
+  color: white;
+  font-size: clamp(11.4168px, 1.224vw, 22.6632px);
+}
+#ContactUsFormSection button {
+  font-size: clamp(13.3196px, 1.428vw, 26.4404px);
+  color: white;
+  background-color: #DD9726;
+  width: clamp(142.71px, 15.3vw, 283.29px);
+  height: clamp(33.299px, 3.57vw, 66.101px);
+  margin-top: 2vw;
+}
+
+@media (min-width: 320px) and (max-width: 620px) {
+  #Offices {
+    flex-direction: column;
+    row-gap: 2vw;
+  }
+  #Offices div {
+    width: 100% !important;
+  }
+  #ContactUsFormSection form input {
+    width: 100%;
+    margin-bottom: 3vw;
+  }
+  #ContactUsFormSection form :nth-child(2) {
+    margin-inline: 0;
+  }
+  #ContactUsFormSection form textarea {
+    margin-top: 0;
+  }
+}

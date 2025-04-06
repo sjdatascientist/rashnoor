@@ -9,12 +9,12 @@ footer {
     align-items: flex-start;
 
     h4 {
-        font-size: nvw(32px);
+        font-size: dynamic-size(32px);
         margin-bottom: 2vw;
     }
 
     p, a {
-        font-size: nvw(23px);
+        font-size: dynamic-size(23px);
     }
 
     div {
@@ -25,7 +25,7 @@ footer {
 
     div.end-logo {
         img {
-            width: nvw(142px);
+            width: dynamic-size(142px);
             height: auto;
             margin-bottom: 2vw;
         }
@@ -61,6 +61,26 @@ footer {
         p {
             width: auto;
             height: 80%;
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 620px) {
+    footer {
+        flex-direction: column;
+        row-gap: 5vw;
+        div {
+            width: 100%;
+            height: auto;
+        }
+        div.end-logo p {
+            width: 95%;
+        }
+        div.quick-links {
+            align-items: normal;
+            ul {
+                margin-left: 3vw;
+            }
         }
     }
 }

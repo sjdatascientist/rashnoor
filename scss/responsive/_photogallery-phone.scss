@@ -1,0 +1,10 @@
+@media (min-width: 320px) and (max-width: 620px)  {
+    #PhotoGalleryMainSection {
+        width: 65%;
+
+        .photo-gallery-main-container {
+            grid-template-columns: repeat(1, minmax(300px,400px));
+
+        }
+    }
+}

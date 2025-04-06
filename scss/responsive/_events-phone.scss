@@ -1,0 +1,8 @@
+@media (min-width: 320px) and (max-width: 620px) {
+    #EventsSection {
+
+        .events-gallery-container {
+            grid-template-columns: repeat(1, 350px);
+        }
+    }
+}

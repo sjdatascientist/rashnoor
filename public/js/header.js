@@ -8,7 +8,7 @@ $('nav ul li a').each(function () {
 
     // If the href matches the current path
     if (linkPath === currentPath) {
-    $(this).css('color', '#DD9726'); // Apply red color
+    $(this).css('color', '#DD9726'); // Apply yellow color
     }
 });
 });

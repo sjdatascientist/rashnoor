@@ -1,0 +1,26 @@
+@media (min-width: 320px) and (max-width: 620px)  {
+    #Offices {
+        flex-direction: column;
+        row-gap: 2vw;
+        div {
+            width: 100% !important;
+        }
+    }
+
+    #ContactUsFormSection {
+        form {
+            input {
+                width: 100%;
+                margin-bottom: 3vw;
+            }
+            :nth-child(2) {
+                margin-inline: 0;
+            }
+            textarea {
+                margin-top: 0;
+            }
+        }
+        
+    }
+    
+}
