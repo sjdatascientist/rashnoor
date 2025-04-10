@@ -2,7 +2,8 @@
     #EventsSection {
 
         .events-gallery-container {
-            grid-template-columns: repeat(1, 350px);
+            grid-template-columns: repeat(1, minmax(275px,350px));
+            row-gap: 8vw;
         }
     }
 }

@@ -22,7 +22,7 @@ $tertiary-color: #DD9726;
     @return $nvw;
 }
 
-@function dynamic-size($size, $pct-change: 33%) {
+@function dynamic-size($size, $pct-change: 20%) {
     // Enter the  ideal size in px which gets converted to vw, acc. to 1920px and pct-change in %
     // to get font-size according to my screen width
     $new-size: $size * 0.71;

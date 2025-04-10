@@ -63,7 +63,8 @@ h3 {
   width: -moz-fit-content;
   width: fit-content;
   margin: auto;
-  margin-bottom: 3vw;
+  margin-top: max(20px, 1.5vw);
+  margin-bottom: max(40px, 3vw);
 }
 
 ul {
@@ -123,11 +124,11 @@ button.view-more-btn {
   aspect-ratio: 2.26/1;
 }
 #WeddingsSection .weddings-gallery-container > div h5 {
-  font-size: clamp(15.2224px, 1.632vw, 30.2176px);
+  font-size: clamp(18.176px, 1.632vw, 27.264px);
   margin-block: 1vw;
 }
 #WeddingsSection .weddings-gallery-container > div p {
-  font-size: clamp(8.5626px, 0.918vw, 16.9974px);
+  font-size: clamp(10.224px, 0.918vw, 15.336px);
 }
 #WeddingsSection .weddings-gallery-container > div div {
   display: inline-flex;
@@ -137,7 +138,7 @@ button.view-more-btn {
   margin-top: 2vw;
 }
 #WeddingsSection .weddings-gallery-container > div div p {
-  font-size: clamp(8.5626px, 0.918vw, 16.9974px);
+  font-size: clamp(10.224px, 0.918vw, 15.336px);
 }
 #WeddingsSection .weddings-gallery-container > div div button {
   width: 8.16vw;
@@ -151,5 +152,6 @@ button.view-more-btn {
 @media (min-width: 320px) and (max-width: 620px) {
   #WeddingsSection .weddings-gallery-container {
     grid-template-columns: repeat(1, minmax(300px, 400px));
+    row-gap: 8vw;
   }
 }

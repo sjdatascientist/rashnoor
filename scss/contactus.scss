@@ -17,7 +17,7 @@
     width: 80vw;
     height: auto;
     margin-block: 2vw;
-    @include flex-behaviour($justify: space-between, $alignment: flex-start);
+    @include flex-behaviour($justify: space-between, $alignment: stretch);
 
     div {
         padding: 2.5vw;

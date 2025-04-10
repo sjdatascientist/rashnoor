@@ -9,12 +9,12 @@ footer {
     align-items: flex-start;
 
     h4 {
-        font-size: dynamic-size(32px);
+        font-size: dynamic-size(36px, 0%);
         margin-bottom: 2vw;
     }
 
     p, a {
-        font-size: dynamic-size(23px);
+        font-size: dynamic-size(24px, 0%);
     }
 
     div {
@@ -80,6 +80,7 @@ footer {
             align-items: normal;
             ul {
                 margin-left: 3vw;
+                row-gap: 2.5vw;
             }
         }
     }

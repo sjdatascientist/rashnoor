@@ -44,7 +44,8 @@ h3 {
     font-size: dynamic-size(77px, 33%);
     width: fit-content;
     margin: auto;
-    margin-bottom: 3vw;
+    margin-top: max(20px, 1.5vw);
+    margin-bottom: max(40px, 3vw);
 }
 
 ul {

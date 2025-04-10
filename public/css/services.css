@@ -63,7 +63,8 @@ h3 {
   width: -moz-fit-content;
   width: fit-content;
   margin: auto;
-  margin-bottom: 3vw;
+  margin-top: max(20px, 1.5vw);
+  margin-bottom: max(40px, 3vw);
 }
 
 ul {
@@ -111,7 +112,7 @@ button.view-more-btn {
   background-color: #2B1111;
 }
 #ServicesSection .services-container div {
-  padding: 3vw;
+  padding: 30px;
   aspect-ratio: 1/1;
 }
 #ServicesSection .services-container div img {
@@ -124,7 +125,7 @@ button.view-more-btn {
   scale: 1.2;
 }
 #ServicesSection .services-container div h5 {
-  font-size: clamp(13.3196px, 1.428vw, 26.4404px);
+  font-size: clamp(15.904px, 1.428vw, 23.856px);
   width: -moz-fit-content;
   width: fit-content;
   margin: auto;
@@ -134,6 +135,7 @@ button.view-more-btn {
 
 @media (min-width: 320px) and (max-width: 620px) {
   #ServicesSection .services-container {
-    grid-template-columns: repeat(1, 350px);
+    grid-template-columns: repeat(1, minmax(250px, 300px));
+    row-gap: 8vw;
   }
 }

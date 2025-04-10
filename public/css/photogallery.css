@@ -63,7 +63,8 @@ h3 {
   width: -moz-fit-content;
   width: fit-content;
   margin: auto;
-  margin-bottom: 3vw;
+  margin-top: max(20px, 1.5vw);
+  margin-bottom: max(40px, 3vw);
 }
 
 ul {
@@ -106,6 +107,7 @@ button.view-more-btn {
 }
 #PhotoGalleryMainSection .photo-gallery-main-container img {
   width: 100%;
+  aspect-ratio: 16/11;
 }
 
 @media (min-width: 320px) and (max-width: 620px) {
@@ -114,5 +116,6 @@ button.view-more-btn {
   }
   #PhotoGalleryMainSection .photo-gallery-main-container {
     grid-template-columns: repeat(1, minmax(300px, 400px));
+    row-gap: 5vw;
   }
 }

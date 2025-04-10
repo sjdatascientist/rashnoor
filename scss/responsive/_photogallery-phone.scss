@@ -4,7 +4,7 @@
 
         .photo-gallery-main-container {
             grid-template-columns: repeat(1, minmax(300px,400px));
-
+            row-gap: 5vw;
         }
     }
 }

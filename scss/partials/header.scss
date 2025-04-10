@@ -15,14 +15,15 @@ header > img {
 }
 
 header nav {
-    width: 70%;
-    min-width: 50%;
+    width: 75%;
+    min-width: 60%;
     flex-shrink: 1;
+    position: relative;
 }
 
 header ul {
     @include flex-behaviour($justify: space-between);
-    font-size: dynamic-size(28px, 25%);
+    font-size: dynamic-size(28px, 40%);
 }
 
 header li {
@@ -34,7 +35,7 @@ header li:hover {
 }
 
 @media (min-width: 320px) and (max-width: 620px) {
-    header nav {
-        width: 80%;
+    header {
+        width: 95vw;
     }
 }

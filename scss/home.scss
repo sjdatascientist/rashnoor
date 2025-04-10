@@ -15,7 +15,7 @@
         margin: auto;
         align-self: center;
         text-transform: uppercase;
-        font-size: nvw(111px);
+        font-size: dynamic-size(111px, 50%);
         text-align: center;
         align-items: center;
     }
@@ -32,7 +32,7 @@
 
 h3 {
     font-family: 'Corinthia';
-    font-size: nvw(100px);
+    font-size: dynamic-size(100px) !important;
     width: fit-content;
     margin: auto;
     margin-bottom: 3vw;
@@ -41,9 +41,16 @@ h3 {
 #CelebratingLife {
     width: 80vw;
     padding: 5vw;    
-
     p {
-        font-size: nvw(23px);
+        font-size: dynamic-size(23px);
+    }
+}
+
+#AboutSectionHome {
+    width: 100vw;
+    img {
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -73,4 +80,4 @@ h3 {
     
 }
 
-
+@import "responsive/home-phone"

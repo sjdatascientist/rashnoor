@@ -49,7 +49,8 @@ h3 {
   width: -moz-fit-content;
   width: fit-content;
   margin: auto;
-  margin-bottom: 3vw;
+  margin-top: max(20px, 1.5vw);
+  margin-bottom: max(40px, 3vw);
 }
 
 ul {
@@ -105,7 +106,7 @@ where n is num. pixels of 1920 layout
   margin: auto;
   align-self: center;
   text-transform: uppercase;
-  font-size: 5.661vw;
+  font-size: clamp(39.405px, 5.661vw, 118.215px);
   text-align: center;
   align-items: center;
 }
@@ -118,7 +119,7 @@ where n is num. pixels of 1920 layout
 
 h3 {
   font-family: "Corinthia";
-  font-size: 5.1vw;
+  font-size: clamp(56.8px, 5.1vw, 85.2px) !important;
   width: -moz-fit-content;
   width: fit-content;
   margin: auto;
@@ -130,7 +131,15 @@ h3 {
   padding: 5vw;
 }
 #CelebratingLife p {
-  font-size: 1.173vw;
+  font-size: clamp(13.064px, 1.173vw, 19.596px);
+}
+
+#AboutSectionHome {
+  width: 100vw;
+}
+#AboutSectionHome img {
+  width: 100%;
+  height: auto;
 }
 
 #PhotoGallerySection .photo-gallery-container {
@@ -149,4 +158,10 @@ h3 {
 #PhotoGallerySection .photo-gallery-container > :nth-child(1) > img,
 #PhotoGallerySection .photo-gallery-container > :nth-child(6) > img {
   float: right;
+}
+
+@media (min-width: 320px) and (max-width: 620px) {
+  #CelebratingLife {
+    width: 90vw;
+  }
 }

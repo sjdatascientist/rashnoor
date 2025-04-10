@@ -63,7 +63,8 @@ h3 {
   width: -moz-fit-content;
   width: fit-content;
   margin: auto;
-  margin-bottom: 3vw;
+  margin-top: max(20px, 1.5vw);
+  margin-bottom: max(40px, 3vw);
 }
 
 ul {
@@ -94,7 +95,7 @@ button.view-more-btn {
 
 #MapSection {
   width: 80vw;
-  height: clamp(428.13px, 45.9vw, 849.87px);
+  height: clamp(511.2px, 45.9vw, 766.8px);
   margin-block: 2vw;
   overflow-y: hidden;
 }
@@ -110,18 +111,18 @@ button.view-more-btn {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: stretch;
 }
 #Offices div {
   padding: 2.5vw;
   background-color: #2B1111;
 }
 #Offices h5 {
-  font-size: clamp(15.2224px, 1.632vw, 30.2176px);
+  font-size: clamp(18.176px, 1.632vw, 27.264px);
   margin-bottom: 3vw;
 }
 #Offices p {
-  font-size: clamp(10.9411px, 1.173vw, 21.7189px);
+  font-size: clamp(13.064px, 1.173vw, 19.596px);
 }
 #Offices .abu-dhabi-office {
   width: 40%;
@@ -130,7 +131,7 @@ button.view-more-btn {
   width: 55%;
 }
 #Offices .dubai-office :last-child {
-  font-size: clamp(15.2224px, 1.632vw, 30.2176px);
+  font-size: clamp(18.176px, 1.632vw, 27.264px);
   margin-top: 1.5vw;
 }
 
@@ -152,11 +153,11 @@ button.view-more-btn {
 }
 #ContactUsFormSection form input::-moz-placeholder {
   color: white;
-  font-size: clamp(11.4168px, 1.224vw, 22.6632px);
+  font-size: clamp(13.632px, 1.224vw, 20.448px);
 }
 #ContactUsFormSection form input::placeholder {
   color: white;
-  font-size: clamp(11.4168px, 1.224vw, 22.6632px);
+  font-size: clamp(13.632px, 1.224vw, 20.448px);
 }
 #ContactUsFormSection form :nth-child(2) {
   margin-inline: 20px;
@@ -164,25 +165,25 @@ button.view-more-btn {
 #ContactUsFormSection form textarea {
   margin-top: 20px;
   width: 100%;
-  height: clamp(133.196px, 14.28vw, 264.404px);
+  height: clamp(159.04px, 14.28vw, 238.56px);
   padding: 25px;
   background-color: #262626;
   border: none;
 }
 #ContactUsFormSection form textarea::-moz-placeholder {
   color: white;
-  font-size: clamp(11.4168px, 1.224vw, 22.6632px);
+  font-size: clamp(13.632px, 1.224vw, 20.448px);
 }
 #ContactUsFormSection form textarea::placeholder {
   color: white;
-  font-size: clamp(11.4168px, 1.224vw, 22.6632px);
+  font-size: clamp(13.632px, 1.224vw, 20.448px);
 }
 #ContactUsFormSection button {
-  font-size: clamp(13.3196px, 1.428vw, 26.4404px);
+  font-size: clamp(15.904px, 1.428vw, 23.856px);
   color: white;
   background-color: #DD9726;
-  width: clamp(142.71px, 15.3vw, 283.29px);
-  height: clamp(33.299px, 3.57vw, 66.101px);
+  width: clamp(170.4px, 15.3vw, 255.6px);
+  height: clamp(39.76px, 3.57vw, 59.64px);
   margin-top: 2vw;
 }
 

@@ -49,7 +49,8 @@ h3 {
   width: -moz-fit-content;
   width: fit-content;
   margin: auto;
-  margin-bottom: 3vw;
+  margin-top: max(20px, 1.5vw);
+  margin-bottom: max(40px, 3vw);
 }
 
 ul {
@@ -105,6 +106,14 @@ where n is num. pixels of 1920 layout
   width: 100%;
 }
 
+#AboutUsSection {
+  width: 100vw;
+}
+#AboutUsSection img {
+  width: 100%;
+  height: auto;
+}
+
 #AboutSection {
   width: 90vw;
   padding: 3vw;
@@ -113,5 +122,5 @@ where n is num. pixels of 1920 layout
   margin-bottom: 3vw;
 }
 #AboutSection p {
-  font-size: max(10px, 1.173vw);
+  font-size: clamp(13.064px, 1.173vw, 19.596px);
 }

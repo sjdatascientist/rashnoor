@@ -49,7 +49,8 @@ h3 {
   width: -moz-fit-content;
   width: fit-content;
   margin: auto;
-  margin-bottom: 3vw;
+  margin-top: max(20px, 1.5vw);
+  margin-bottom: max(40px, 3vw);
 }
 
 ul {
@@ -95,7 +96,7 @@ where n is num. pixels of 1920 layout
 header {
   width: 80vw;
   margin-inline: auto;
-  height: clamp(71.355px, 7.65vw, 141.645px);
+  height: clamp(85.2px, 7.65vw, 127.8px);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -108,9 +109,10 @@ header > img {
 }
 
 header nav {
-  width: 70%;
-  min-width: 50%;
+  width: 75%;
+  min-width: 60%;
   flex-shrink: 1;
+  position: relative;
 }
 
 header ul {
@@ -118,7 +120,7 @@ header ul {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  font-size: clamp(14.91px, 1.428vw, 24.85px);
+  font-size: clamp(11.928px, 1.428vw, 27.832px);
 }
 
 header li {
@@ -130,7 +132,7 @@ header li:hover {
 }
 
 @media (min-width: 320px) and (max-width: 620px) {
-  header nav {
-    width: 80%;
+  header {
+    width: 95vw;
   }
 }

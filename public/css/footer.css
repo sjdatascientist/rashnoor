@@ -49,7 +49,8 @@ h3 {
   width: -moz-fit-content;
   width: fit-content;
   margin: auto;
-  margin-bottom: 3vw;
+  margin-top: max(20px, 1.5vw);
+  margin-bottom: max(40px, 3vw);
 }
 
 ul {
@@ -103,11 +104,11 @@ footer {
   align-items: flex-start;
 }
 footer h4 {
-  font-size: clamp(15.2224px, 1.632vw, 30.2176px);
+  font-size: clamp(25.56px, 1.836vw, 25.56px);
   margin-bottom: 2vw;
 }
 footer p, footer a {
-  font-size: clamp(10.9411px, 1.173vw, 21.7189px);
+  font-size: clamp(17.04px, 1.224vw, 17.04px);
 }
 footer div {
   width: 33%;
@@ -118,7 +119,7 @@ footer div {
   align-items: start;
 }
 footer div.end-logo img {
-  width: clamp(67.5494px, 7.242vw, 134.0906px);
+  width: clamp(80.656px, 7.242vw, 120.984px);
   height: auto;
   margin-bottom: 2vw;
 }
@@ -166,5 +167,6 @@ footer div.office p {
   }
   footer div.quick-links ul {
     margin-left: 3vw;
+    row-gap: 2.5vw;
   }
 }
