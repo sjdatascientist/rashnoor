@@ -119,7 +119,7 @@ button.view-more-btn {
 }
 #Offices h5 {
   font-size: clamp(18.176px, 1.632vw, 27.264px);
-  margin-bottom: 3vw;
+  margin-bottom: 1vw;
 }
 #Offices p {
   font-size: clamp(13.064px, 1.173vw, 19.596px);
@@ -129,10 +129,6 @@ button.view-more-btn {
 }
 #Offices .dubai-office {
   width: 55%;
-}
-#Offices .dubai-office :last-child {
-  font-size: clamp(18.176px, 1.632vw, 27.264px);
-  margin-top: 1.5vw;
 }
 
 #ContactUsFormSection {

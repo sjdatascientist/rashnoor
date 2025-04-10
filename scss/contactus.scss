@@ -26,7 +26,7 @@
 
     h5 {
         font-size: dynamic-size(32px);
-        margin-bottom: 3vw;
+        margin-bottom: 1vw;
     }
 
     p {
@@ -39,10 +39,6 @@
 
     .dubai-office {
         width: 55%;
-        :last-child {
-            font-size: dynamic-size(32px);
-            margin-top: 1.5vw;
-        }
     }
 }
 

@@ -37,7 +37,7 @@
                 font-size: dynamic-size(18px);
             }
             div {
-                @include flex-behaviour($display: inline-flex, $justify: space-between);
+                @include flex-behaviour($display: flex, $justify: space-between);
                 margin-top: 2vw;
                 p {
                     font-size: dynamic-size(18px)

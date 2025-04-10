@@ -131,7 +131,7 @@ button.view-more-btn {
   font-size: clamp(10.224px, 0.918vw, 15.336px);
 }
 #WeddingsSection .weddings-gallery-container > div div {
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
