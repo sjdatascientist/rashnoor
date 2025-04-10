@@ -15,7 +15,7 @@
         margin: auto;
         align-self: center;
         text-transform: uppercase;
-        font-size: dynamic-size(111px, 50%);
+        font-size: dynamic-size(111px, 66%);
         text-align: center;
         align-items: center;
     }
@@ -32,7 +32,7 @@
 
 h3 {
     font-family: 'Corinthia';
-    font-size: dynamic-size(100px) !important;
+    font-size: dynamic-size(100px, 33%) !important;
     width: fit-content;
     margin: auto;
     margin-bottom: 3vw;

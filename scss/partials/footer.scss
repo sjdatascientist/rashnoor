@@ -9,12 +9,16 @@ footer {
     align-items: flex-start;
 
     h4 {
-        font-size: dynamic-size(36px, 0%);
-        margin-bottom: 2vw;
+        font-size: dynamic-size(34px, 0%);
+        margin-bottom: 3vw;
     }
 
-    p, a {
-        font-size: dynamic-size(24px, 0%);
+    p {
+        font-size: dynamic-size(20px, 0%);
+    }
+
+    a {
+        font-size: dynamic-size(28px, 0%);
     }
 
     div {

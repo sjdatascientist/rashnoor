@@ -106,7 +106,7 @@ where n is num. pixels of 1920 layout
   margin: auto;
   align-self: center;
   text-transform: uppercase;
-  font-size: clamp(39.405px, 5.661vw, 118.215px);
+  font-size: clamp(26.7954px, 5.661vw, 130.8246px);
   text-align: center;
   align-items: center;
 }
@@ -119,7 +119,7 @@ where n is num. pixels of 1920 layout
 
 h3 {
   font-family: "Corinthia";
-  font-size: clamp(56.8px, 5.1vw, 85.2px) !important;
+  font-size: clamp(47.57px, 5.1vw, 94.43px) !important;
   width: -moz-fit-content;
   width: fit-content;
   margin: auto;
