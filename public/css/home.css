@@ -184,7 +184,7 @@ h3 {
 }
 #BookNowSection h2 {
   font-size: clamp(31.3962px, 3.366vw, 62.3238px);
-  font-family: "Noto-Serif" !important;
+  font-family: "Noto Serif", serif;
   font-style: italic;
   font-weight: 600;
   text-align: center;
