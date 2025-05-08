@@ -143,6 +143,10 @@ h3 {
 }
 
 #PhotoGallerySection {
+  display: none;
+  width: -moz-min-content;
+  width: min-content;
+  overflow-x: hidden !important;
   margin-top: 2vw;
 }
 #PhotoGallerySection .photo-gallery-container {
@@ -164,10 +168,32 @@ h3 {
   float: right;
 }
 
+#NewPhotoGallerySection {
+  width: 100%;
+}
+#NewPhotoGallerySection .new-photo-gallery-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 12.5% 25% 25% 25% 12.5%;
+  /* gap: 1rem; */
+}
+#NewPhotoGallerySection .new-photo-gallery-container div {
+  padding: 0.5vw;
+  aspect-ratio: 1/0.71;
+  width: 100%;
+  height: 17vw;
+  overflow: hidden;
+}
+#NewPhotoGallerySection .new-photo-gallery-container div img {
+  height: 100%;
+  width: 100%;
+  /* object-fit: cover; */
+}
+
 #BookNowSection {
   width: 100%;
   margin-top: 2rem;
-  padding-block: max(4rem, 4vw);
+  padding-block: max(5rem, 5vw);
   background-color: #dd9726;
 }
 #BookNowSection > * {
