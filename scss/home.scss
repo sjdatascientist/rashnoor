@@ -80,7 +80,7 @@ h3 {
 #BookNowSection {
     width: 100%;
     margin-top: 2rem;
-    padding-block: max(5rem, 5vw);
+    padding-block: max(4rem, 4vw);
     background-color: rgba($tertiary-color, 1);
 	> * {
 		width: fit-content;
@@ -94,7 +94,7 @@ h3 {
         margin-bottom: 1rem !important;
 	}
 
-    h3 {
+    h2 {
         font-size: dynamic-size(66px, 33%) !important;
         font-family: 'Noto-Serif' !important;
         font-style: italic;

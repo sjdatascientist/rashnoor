@@ -168,7 +168,7 @@ h3 {
 #BookNowSection {
   width: 100%;
   margin-top: 2rem;
-  padding-block: max(5rem, 5vw);
+  padding-block: max(4rem, 4vw);
   background-color: #dd9726;
 }
 #BookNowSection > * {
@@ -182,7 +182,7 @@ h3 {
   color: #2B1111;
   margin-bottom: 1rem !important;
 }
-#BookNowSection h3 {
+#BookNowSection h2 {
   font-size: clamp(31.3962px, 3.366vw, 62.3238px) !important;
   font-family: "Noto-Serif" !important;
   font-style: italic;
