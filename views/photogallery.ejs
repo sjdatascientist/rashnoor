@@ -4,8 +4,11 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Photo Gallery</title>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 		<link rel="stylesheet" href="../public/css/photogallery.css" />
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
 	</head>
 	<body>
 		<%- include('partials/header') %>
@@ -14,7 +17,7 @@
 			<h3>Photo Gallery</h3>
 			<!-- Categories -->
 			<h4>Weddings</h4>
-			<div class="photo-gallery-main-container">
+			<div class="photo-gallery-main-container" data-aos="zoom-in">
 				<img src="../public/assets/media/photo-gallery-main/2.png" alt="" />
 				<img src="../public/assets/media/photo-gallery-main/1.png" alt="" />
 				<img src="../public/assets/media/photo-gallery-main/8.png" alt="" />
@@ -27,7 +30,7 @@
 			</div>
 			
 			<h4>Events</h4>
-			<div class="photo-gallery-main-container">
+			<div class="photo-gallery-main-container" data-aos="zoom-in">
 				<img src="../public/assets/media/photo-gallery-main/13.png" alt="" />
 				<img src="../public/assets/media/photo-gallery-main/14.png" alt="" />
 				<img src="../public/assets/media/photo-gallery-main/15.png" alt="" />
@@ -40,7 +43,7 @@
 			</div>
 
 			<h4>Baby Showers</h4>
-			<div class="photo-gallery-main-container">
+			<div class="photo-gallery-main-container" data-aos="zoom-in">
 				<img src="../public/assets/media/photo-gallery-main/16.png" alt="" />
 				<img src="../public/assets/media/photo-gallery-main/25.jpg" alt="" />
 				<img src="../public/assets/media/photo-gallery-main/17.png" alt="" />
@@ -50,6 +53,8 @@
 
 		<%- include('partials/footer') %>
 	</body>
+
+	<script>AOS.init();</script>
 </html>
 
 <script src="../public/js/refLine.js"></script>

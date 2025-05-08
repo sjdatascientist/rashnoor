@@ -1,86 +1,119 @@
-@import "partials/root";
-@import "partials/utils";
+@import 'partials/root';
+@import 'partials/utils';
 
 #HeroSection {
-    // height: fit-content(nvw(900px));
-    background-color: none;
-    background-image: url('../public/assets/media/hero-bg.png');
-    height: nvw(900px);
-    width: 100%;
-    display: flex;
-    // background: url('../public/assets/media/hero-bg.png') center cover;
+	// height: fit-content(nvw(900px));
+	background-color: none;
+	background-image: url('../public/assets/media/hero-bg.png');
+	height: nvw(900px);
+	width: 100%;
+	display: flex;
+	// background: url('../public/assets/media/hero-bg.png') center cover;
 
-    h1 {
-        width: fit-content;
-        margin: auto;
-        align-self: center;
-        text-transform: uppercase;
-        font-size: dynamic-size(111px, 66%);
-        text-align: center;
-        align-items: center;
-    }
+	h1 {
+		width: fit-content;
+		margin: auto;
+		align-self: center;
+		text-transform: uppercase;
+		font-size: dynamic-size(111px, 66%);
+		text-align: center;
+		align-items: center;
+	}
 
-    img {
-        position: absolute;
-        width: 100%;
-        height: inherit;
-        z-index: -2;
-    }
-
-
+	img {
+		position: absolute;
+		width: 100%;
+		height: inherit;
+		z-index: -2;
+	}
 }
 
 h3 {
-    font-family: 'Corinthia';
-    font-size: dynamic-size(100px, 33%) !important;
-    width: fit-content;
-    margin: auto;
-    margin-bottom: 3vw;
+	font-family: 'Corinthia';
+	font-size: dynamic-size(100px, 33%) !important;
+	width: fit-content;
+	margin: auto;
+	margin-bottom: 3vw;
 }
 
 #CelebratingLife {
-    width: 80vw;
-    padding: 5vw;    
-    p {
-        font-size: dynamic-size(23px);
-        text-align: justify;
-    }
+	width: 80vw;
+	padding: 5vw;
+	p {
+		font-size: dynamic-size(23px);
+		text-align: justify;
+	}
 }
 
 #AboutSectionHome {
-    width: 100vw;
-    img {
-        width: 100%;
-        height: auto;
-    }
+	width: 100vw;
+	img {
+		width: 100%;
+		height: auto;
+	}
 }
 
 #PhotoGallerySection {
-    // width: 100%;
-    margin-top: 2vw;
-    .photo-gallery-container {
-        margin-block: 5vw;
-        display: grid;
-        overflow-x: hidden !important;
-        // grid-template-columns: repeat(5, minmax(330px, 660px));
-        grid-template-columns: repeat(5, minmax(0.073vw*330, 0.073vw*660));
-        gap: 1rem;
-        // overflow-x: scroll;
-        transform: translateX(-1 * nvw(18px));
-        div {
-            aspect-ratio: 1 / 0.71;
-        }
-        img {
-            height: 100%;
-        }
-    }
+	// width: 100%;
+	margin-top: 2vw;
+	.photo-gallery-container {
+		margin-block: 5vw;
+		display: grid;
+		overflow-x: hidden !important;
+		// grid-template-columns: repeat(5, minmax(330px, 660px));
+		grid-template-columns: repeat(5, minmax(0.073vw * 330, 0.073vw * 660));
+		gap: 1rem;
+		// overflow-x: scroll;
+		transform: translateX(-1 * nvw(18px));
+		div {
+			aspect-ratio: 1 / 0.71;
+		}
+		img {
+			height: 100%;
+		}
+	}
 
-    .photo-gallery-container > :nth-child(1) > img,
-    .photo-gallery-container > :nth-child(6) > img {
-        float: right;
-    }
-
-    
+	.photo-gallery-container > :nth-child(1) > img,
+	.photo-gallery-container > :nth-child(6) > img {
+		float: right;
+	}
 }
 
-@import "responsive/home-phone"
+#BookNowSection {
+    width: 100%;
+    margin-top: 2rem;
+    padding-block: max(3rem, 4vw);
+    background-color: rgba($tertiary-color, 1);
+	> * {
+		width: fit-content;
+		margin: auto;
+	}
+
+	h4 {
+		font-size: dynamic-size(34px);
+        text-transform: uppercase;
+        color: $secondary-color;
+        margin-bottom: 0.5rem !important;
+	}
+
+    h3 {
+        font-size: dynamic-size(66px) !important;
+        text-align: center;
+        font-family: 'Noto-Serif';
+        color: $secondary-color;
+        margin-bottom: 1rem !important;
+    }
+
+	button {
+		width: dynamic-size(320px, 25%);
+		height: dynamic-size(80px, 25%);
+		display: block;
+		border: max(1px, nvw(3px)) solid #dd9726;
+		font-size: dynamic-size(28px, 25%);
+		color: white;
+		background-color: $secondary-color;
+		cursor: pointer;
+	}
+}
+
+@import 'responsive/home-phone';

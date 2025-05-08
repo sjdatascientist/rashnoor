@@ -164,6 +164,41 @@ h3 {
   float: right;
 }
 
+#BookNowSection {
+  width: 100%;
+  margin-top: 2rem;
+  padding-block: max(3rem, 4vw);
+  background-color: #dd9726;
+}
+#BookNowSection > * {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+#BookNowSection h4 {
+  font-size: clamp(19.312px, 1.734vw, 28.968px);
+  text-transform: uppercase;
+  color: #2B1111;
+  margin-bottom: 0.5rem !important;
+}
+#BookNowSection h3 {
+  font-size: clamp(37.488px, 3.366vw, 56.232px) !important;
+  text-align: center;
+  font-family: "Noto-Serif";
+  color: #2B1111;
+  margin-bottom: 1rem !important;
+}
+#BookNowSection button {
+  width: clamp(170.4px, 16.32vw, 284px);
+  height: clamp(42.6px, 4.08vw, 71px);
+  display: block;
+  border: max(1px, 0.153vw) solid #dd9726;
+  font-size: clamp(14.91px, 1.428vw, 24.85px);
+  color: white;
+  background-color: #2B1111;
+  cursor: pointer;
+}
+
 @media (min-width: 320px) and (max-width: 620px) {
   #CelebratingLife {
     width: 90vw;
