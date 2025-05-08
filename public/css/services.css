@@ -26,17 +26,12 @@ where n is num. pixels of 1920 layout
 /* 2. Functions */
 /* 3. Mixins */
 /* 4. Pseudo-Classes */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 .ref-line {
   border: 3px gray dashed;
 }
 
-@font-face {
-  font-family: "Bodini";
-  src: url("../assets/fonts/Bodoni.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
 html {
   font-size: 62.5%;
 }
@@ -51,7 +46,8 @@ html {
 body {
   width: 100vw;
   color: white;
-  background-color: black;
+  background-image: url("../../public/assets/media/backdrop.png");
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -95,8 +91,10 @@ button.view-more-btn {
 
 #ServicesSection {
   width: 75vw;
-  margin-block-start: 5vw;
-  margin-block-end: 10vw;
+  margin-block-end: max(2.5rem, 3vw);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #ServicesSection .services-container {
   width: 100%;
@@ -106,10 +104,10 @@ button.view-more-btn {
   gap: 2vw;
 }
 #ServicesSection .services-container > :nth-child(odd) {
-  background-color: #2B2A11;
+  background-color: #2b2a11;
 }
 #ServicesSection .services-container > :nth-child(even) {
-  background-color: #2B1111;
+  background-color: #2b1111;
 }
 #ServicesSection .services-container div {
   padding: 30px;
@@ -131,6 +129,18 @@ button.view-more-btn {
   margin: auto;
   text-align: center;
   height: 30px;
+}
+#ServicesSection button {
+  width: clamp(170.4px, 16.32vw, 284px);
+  height: clamp(42.6px, 4.08vw, 71px);
+  display: block;
+  margin: auto;
+  margin-block: max(3rem, 4vw);
+  font-size: clamp(14.91px, 1.428vw, 24.85px);
+  font-weight: bold;
+  color: black;
+  background-color: #dd9726;
+  cursor: pointer;
 }
 
 @media (min-width: 320px) and (max-width: 620px) {

@@ -1,49 +1,64 @@
-@import "partials/utils";
-@import "partials/root";
+@import 'partials/utils';
+@import 'partials/root';
 
-$odd-item-color: #2B2A11;
-$even-item-color: #2B1111;
+$odd-item-color: #2b2a11;
+$even-item-color: #2b1111;
 
 #ServicesSection {
-    width: 75vw;
-    margin-block-start: 5vw;
-    margin-block-end: 10vw;
+	width: 75vw;
+	margin-block-end: max(2.5rem, 3vw);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 
-    .services-container {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(3, 33.33%);
-        justify-content: center;
-        gap: 2vw;
-        > :nth-child(odd) {
-            background-color: $odd-item-color;
-        }
-        > :nth-child(even) {
-            background-color: $even-item-color;
-        }
-        
-        div {
-            padding: 30px;
-            aspect-ratio: 1 / 1;
-            img {
-                width: 100%;
-                height: auto;
-                margin-bottom: 3vw;
-                transition: scale 0.5s ease-out;
-                &:hover {
-                    scale: 1.2;
-                }
-            }
-            h5 {
-                // display: none;
-                font-size: dynamic-size(28px);
-                width: fit-content;
-                margin: auto;
-                text-align: center;
-                height: 30px;
-            }
-        }
-    }
+	.services-container {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(3, 33.33%);
+		justify-content: center;
+		gap: 2vw;
+		> :nth-child(odd) {
+			background-color: $odd-item-color;
+		}
+		> :nth-child(even) {
+			background-color: $even-item-color;
+		}
+
+		div {
+			padding: 30px;
+			aspect-ratio: 1 / 1;
+			img {
+				width: 100%;
+				height: auto;
+				margin-bottom: 3vw;
+				transition: scale 0.5s ease-out;
+				&:hover {
+					scale: 1.2;
+				}
+			}
+			h5 {
+				// display: none;
+				font-size: dynamic-size(28px);
+				width: fit-content;
+				margin: auto;
+				text-align: center;
+				height: 30px;
+			}
+		}
+	}
+
+	button {
+		width: dynamic-size(320px, 25%);
+		height: dynamic-size(80px, 25%);
+		display: block;
+		margin: auto;
+		margin-block: max(3rem, 4vw);
+		font-size: dynamic-size(28px, 25%);
+        font-weight: bold;
+		color: black;
+		background-color: #dd9726;
+		cursor: pointer;
+	}
 }
 
-@import "responsive/services-phone"
+@import 'responsive/services-phone';

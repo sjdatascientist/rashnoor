@@ -56,9 +56,11 @@ h3 {
 
 #PhotoGallerySection {
     // width: 100%;
+    margin-top: 2vw;
     .photo-gallery-container {
         margin-block: 5vw;
         display: grid;
+        overflow-x: hidden !important;
         // grid-template-columns: repeat(5, minmax(330px, 660px));
         grid-template-columns: repeat(5, minmax(0.073vw*330, 0.073vw*660));
         gap: 1rem;

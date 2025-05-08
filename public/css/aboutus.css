@@ -12,17 +12,12 @@ where n is num. pixels of 1920 layout
 /* 2. Functions */
 /* 3. Mixins */
 /* 4. Pseudo-Classes */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 .ref-line {
   border: 3px gray dashed;
 }
 
-@font-face {
-  font-family: "Bodini";
-  src: url("../assets/fonts/Bodoni.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
 html {
   font-size: 62.5%;
 }
@@ -37,7 +32,8 @@ html {
 body {
   width: 100vw;
   color: white;
-  background-color: black;
+  background-image: url("../../public/assets/media/backdrop.png");
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -118,9 +114,12 @@ where n is num. pixels of 1920 layout
   width: 90vw;
   padding: 3vw;
 }
-#AboutSection h3 + p {
-  margin-bottom: 3vw;
+#AboutSection h3 ~ p {
+  margin-bottom: 2vw;
 }
 #AboutSection p {
-  font-size: clamp(13.064px, 1.173vw, 19.596px);
+  font-size: clamp(14.768px, 1.326vw, 22.152px);
+}
+#AboutSection strong {
+  font-size: clamp(20.448px, 1.836vw, 30.672px);
 }

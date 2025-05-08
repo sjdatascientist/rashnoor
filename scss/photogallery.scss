@@ -8,6 +8,24 @@
         font-family: 'Corinthia';
     }
 
+    h4 {
+        position: relative;
+        font-size: dynamic-size(42px);
+        font-weight: 500;
+        margin-block: 3rem;
+        &::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: 50%;
+            display: inline-block;
+            width: 25%;
+            height: 5px;
+            background-color: #DD9726;
+            margin-right: 10px;
+        }
+    }
+
     .photo-gallery-main-container {
         display: grid;
         grid-template-columns: repeat(3, nvw(464px));

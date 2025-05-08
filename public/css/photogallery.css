@@ -26,17 +26,12 @@ where n is num. pixels of 1920 layout
 /* 2. Functions */
 /* 3. Mixins */
 /* 4. Pseudo-Classes */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 .ref-line {
   border: 3px gray dashed;
 }
 
-@font-face {
-  font-family: "Bodini";
-  src: url("../assets/fonts/Bodoni.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
 html {
   font-size: 62.5%;
 }
@@ -51,7 +46,8 @@ html {
 body {
   width: 100vw;
   color: white;
-  background-color: black;
+  background-image: url("../../public/assets/media/backdrop.png");
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -98,6 +94,23 @@ button.view-more-btn {
 }
 #PhotoGalleryMainSection h3 {
   font-family: "Corinthia";
+}
+#PhotoGalleryMainSection h4 {
+  position: relative;
+  font-size: clamp(23.856px, 2.142vw, 35.784px);
+  font-weight: 500;
+  margin-block: 3rem;
+}
+#PhotoGalleryMainSection h4::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 50%;
+  display: inline-block;
+  width: 25%;
+  height: 5px;
+  background-color: #DD9726;
+  margin-right: 10px;
 }
 #PhotoGalleryMainSection .photo-gallery-main-container {
   display: grid;

@@ -28,13 +28,17 @@
     width: 90vw;
     padding: 3vw;
 
-    h3 + p {
-        margin-bottom: 3vw;
+    h3 ~ p {
+        margin-bottom: 2vw;
     }
 
     p {
-        font-size: dynamic-size(23px);
+        font-size: dynamic-size(26px);
         // font-size: max(10px, nvw(23px));
+    }
+
+    strong {
+        font-size: dynamic-size(36px);
     }
 }
 
