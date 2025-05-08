@@ -143,6 +143,7 @@ header li:hover {
     top: -4.8rem;
     right: -10rem;
     background-color: black;
+    border: 2px black solid;
     padding: 2rem;
     padding-top: 4rem;
     width: 250px;
