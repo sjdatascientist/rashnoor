@@ -82,7 +82,7 @@ h3 {
 #BookNowSection {
     width: 100%;
     margin-top: 2rem;
-    padding-block: max(3rem, 4vw);
+    padding-block: max(4rem, 4vw);
     background-color: rgba($tertiary-color, 1);
 	> * {
 		width: fit-content;
@@ -90,19 +90,21 @@ h3 {
 	}
 
 	h4 {
-		font-size: dynamic-size(34px);
+		font-size: dynamic-size(28px, 40%);
         text-transform: uppercase;
         color: $secondary-color;
-        margin-bottom: 0.5rem !important;
+        margin-bottom: 1rem !important;
 	}
 
     h3 {
-        font-size: dynamic-size(66px, 50%) !important;
-        text-align: center;
+        font-size: dynamic-size(66px, 33%) !important;
         font-family: 'Noto-Serif';
+        font-style: italic;
+        font-weight: 600;
+        text-align: center;
         color: $secondary-color;
-        margin-bottom: 1rem !important;
-        line-height: .9;
+        margin-bottom: 2rem !important;
+        line-height: .95;
     }
 
 	button {
