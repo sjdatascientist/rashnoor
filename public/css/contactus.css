@@ -178,6 +178,7 @@ button.view-more-btn {
   width: clamp(170.4px, 15.3vw, 255.6px);
   height: clamp(39.76px, 3.57vw, 59.64px);
   margin-top: 2vw;
+  border: none;
 }
 
 @media (min-width: 320px) and (max-width: 620px) {

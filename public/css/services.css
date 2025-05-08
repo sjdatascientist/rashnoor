@@ -142,6 +142,7 @@ button.view-more-btn {
   color: white;
   background-color: #dd9726;
   cursor: pointer;
+  border: none;
 }
 
 @media (min-width: 320px) and (max-width: 620px) {
