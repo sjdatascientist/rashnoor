@@ -170,6 +170,7 @@ h3 {
 
 #NewPhotoGallerySection {
   width: 100%;
+  overflow-x: hidden;
 }
 #NewPhotoGallerySection .new-photo-gallery-container {
   width: 100%;

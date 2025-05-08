@@ -83,6 +83,7 @@ h3 {
 
 #NewPhotoGallerySection {
     width: 100%;
+    overflow-x: hidden;
     .new-photo-gallery-container {
         width: 100%;
         display: grid;
