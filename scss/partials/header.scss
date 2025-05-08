@@ -50,11 +50,17 @@ header li:hover {
             background-color: black;
             padding: 2rem;
             padding-top: 4rem;
-            width: 200px;
+            width: 250px;
             flex-direction: column;
             justify-content: flex-start;
             align-items: flex-start;
-            row-gap: 1rem;
+            row-gap: 1.5rem;
+
+            li {
+                a {
+                    font-size: 1.8rem;
+                }
+            }
         }
     }
 
