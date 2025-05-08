@@ -129,6 +129,7 @@ h3 {
 }
 #CelebratingLife p {
   font-size: clamp(13.064px, 1.173vw, 19.596px);
+  text-align: justify;
 }
 
 #AboutSectionHome {

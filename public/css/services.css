@@ -138,8 +138,8 @@ button.view-more-btn {
   margin: auto;
   margin-block: max(3rem, 4vw);
   font-size: clamp(14.91px, 1.428vw, 24.85px);
-  font-weight: bold;
-  color: black;
+  font-weight: 400;
+  color: white;
   background-color: #dd9726;
   cursor: pointer;
 }
