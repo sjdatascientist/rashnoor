@@ -97,11 +97,12 @@ h3 {
 	}
 
     h3 {
-        font-size: dynamic-size(66px) !important;
+        font-size: dynamic-size(66px, 50%) !important;
         text-align: center;
         font-family: 'Noto-Serif';
         color: $secondary-color;
         margin-bottom: 1rem !important;
+        line-height: .9;
     }
 
 	button {

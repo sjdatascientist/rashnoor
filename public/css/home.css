@@ -182,11 +182,12 @@ h3 {
   margin-bottom: 0.5rem !important;
 }
 #BookNowSection h3 {
-  font-size: clamp(37.488px, 3.366vw, 56.232px) !important;
+  font-size: clamp(23.43px, 3.366vw, 70.29px) !important;
   text-align: center;
   font-family: "Noto-Serif";
   color: #2B1111;
   margin-bottom: 1rem !important;
+  line-height: 0.9;
 }
 #BookNowSection button {
   width: clamp(170.4px, 16.32vw, 284px);
