@@ -35,6 +35,8 @@ body {
   color: white;
   background-image: url("../../public/assets/media/backdrop.png");
   background-size: cover;
+  background-blend-mode: normal;
+  background-color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
