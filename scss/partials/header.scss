@@ -5,7 +5,8 @@ header {
     width: 80vw;
     margin-inline: auto;
     height: dynamic-size(150px);
-    // padding: 1rem;
+    /* overflow-x: hidden; */
+    padding-top: 1rem;
     @include flex-behaviour($justify: space-between)
 }
 
@@ -36,6 +37,28 @@ header li:hover {
 
 @media (min-width: 320px) and (max-width: 620px) {
     header {
-        width: 95vw;
+        width: 90vw;
+    }
+
+    nav {
+        ul {
+            z-index: 3;
+            height: 100dvh;
+            position: absolute;
+            top: -4.9rem;
+            right: -10rem;
+            background-color: black;
+            padding: 2rem;
+            padding-top: 4rem;
+            width: 200px;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            row-gap: 1rem;
+        }
+    }
+
+    .hide-mobile-nav {
+        display: none;
     }
 }

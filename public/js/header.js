@@ -12,3 +12,26 @@ $('nav ul li a').each(function () {
     }
 });
 });
+
+const menuBtn = document.getElementsByTagName("box-icon")[0];
+menuBtn.style.zIndex = 99
+const nav = document.getElementsByTagName("nav")[0];
+
+
+if (window.innerWidth > 620) {
+    menuBtn.style.display = "none";
+}
+else {
+    menuBtn.style.display = "block";
+    nav.classList.add('hide-mobile-nav')
+}
+
+menuBtn.addEventListener("click", function () {
+    nav.classList.toggle("hide-mobile-nav");
+    if (menuBtn.getAttribute('name') == "menu-alt-right") {
+        menuBtn.setAttribute("name", 'x')
+    }
+    else if (menuBtn.getAttribute("name") == 'x') {
+        menuBtn.setAttribute("name", "menu-alt-right")
+    }
+})
