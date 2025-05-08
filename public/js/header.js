@@ -13,6 +13,10 @@ $('nav ul li a').each(function () {
 });
 });
 
+document.getElementById("header-logo").addEventListener('click', function () {
+    window.location.href = window.location.origin
+})
+
 const menuBtn = document.getElementsByTagName("box-icon")[0];
 menuBtn.style.zIndex = 99
 const nav = document.getElementsByTagName("nav")[0];
