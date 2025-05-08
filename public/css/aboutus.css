@@ -26,7 +26,8 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Bodini";
+  font-family: "Noto Serif";
+  font-weight: 300;
 }
 
 body {
@@ -115,7 +116,7 @@ where n is num. pixels of 1920 layout
   padding: 3vw;
 }
 #AboutSection h3 ~ p {
-  margin-bottom: 2vw;
+  margin-bottom: 2.5rem;
 }
 #AboutSection p {
   font-size: clamp(14.768px, 1.326vw, 22.152px);
