@@ -48,7 +48,7 @@ body {
   width: 100vw;
   color: white;
   background-image: url("../../public/assets/media/backdrop.png");
-  background-size: cover;
+  background-size: 20%;
   background-blend-mode: normal;
   background-color: black;
   display: flex;
