@@ -6,7 +6,7 @@ header {
     margin-inline: auto;
     height: dynamic-size(150px);
     /* overflow-x: hidden; */
-    padding-top: 1rem;
+    padding-block: 1rem;
     @include flex-behaviour($justify: space-between)
 }
 

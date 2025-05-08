@@ -97,7 +97,7 @@ header {
   margin-inline: auto;
   height: clamp(85.2px, 7.65vw, 127.8px);
   /* overflow-x: hidden; */
-  padding-top: 1rem;
+  padding-block: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
