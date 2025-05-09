@@ -97,6 +97,7 @@ button.view-more-btn {
 }
 #PhotoGalleryMainSection h3 {
   font-family: "Corinthia";
+  font-size: clamp(47.57px, 5.1vw, 94.43px);
 }
 #PhotoGalleryMainSection h4 {
   position: relative;
