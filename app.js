@@ -11,7 +11,7 @@ app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 
 // Serve favicon
-app.use(favicon(path.join(__dirname, 'public', 'assets/media/favicon.png')));
+app.use(favicon(path.join(__dirname, 'public', 'assets/media/favicon.jpg')));
 
 app.get('/', (req, res) => {
     res.render('home');
