@@ -129,6 +129,10 @@ button.view-more-btn {
      object-fit: cover;
 }
 
+.last-gallery-div {
+  margin-bottom: max(7rem, 7vw);
+}
+
 .event-heading {
   font-family: "Noto Serif", serif !important;
   font-size: clamp(36.6289px, 3.927vw, 72.7111px) !important;
