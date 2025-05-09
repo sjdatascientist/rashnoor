@@ -37,6 +37,8 @@ body {
   background-size: 50%;
   background-blend-mode: normal;
   background-color: black;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
   display: flex;
   flex-direction: column;
   align-items: center;
