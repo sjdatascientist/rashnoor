@@ -36,9 +36,19 @@
         img {
             width: 100%;
             aspect-ratio: 16 / 11;
+            object-fit: cover;
         }
     }
 
+}
+
+.event-heading {
+    font-family: 'Noto Serif', serif !important;
+    font-size: dynamic-size(77px, 33%) !important;
+}
+
+.new-event-container > img{
+    object-fit: cover;
 }
 
 @import "responsive/photogallery-phone"

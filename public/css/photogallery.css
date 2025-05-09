@@ -125,6 +125,18 @@ button.view-more-btn {
 #PhotoGalleryMainSection .photo-gallery-main-container img {
   width: 100%;
   aspect-ratio: 16/11;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.event-heading {
+  font-family: "Noto Serif", serif !important;
+  font-size: clamp(36.6289px, 3.927vw, 72.7111px) !important;
+}
+
+.new-event-container > img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (min-width: 320px) and (max-width: 620px) {

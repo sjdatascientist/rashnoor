@@ -1,97 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events</title>
-    <link rel="stylesheet" href="../public/css/events.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-</head>
-<body>
-    <%- include('partials/header') %>
-    
-    <section id="EventsSection">
-        <h3>Events</h3>
-        <div class="events-gallery-container">
-            <div>
-                <img src="../public/assets/media/events-imgs/1.png" alt="">
-                <h5>Rotana Saadiyat- Abu Dhabi</h5>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                <div>
-                    <p>12 Photos</p>
-                    <button>View More</button>
-                </div>
-            </div>
-            <div>
-                <img src="../public/assets/media/events-imgs/2.png" alt="">
-                <h5>Rotana Saadiyat- Abu Dhabi</h5>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                <div>
-                    <p>12 Photos</p>
-                    <button>View More</button>
-                </div>
-            </div>
-            <div>
-                <img src="../public/assets/media/events-imgs/3.png" alt="">
-                <h5>Desi Gala</h5>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                <div>
-                    <p>12 Photos</p>
-                    <button>View More</button>
-                </div>
-            </div>
-            <div>
-                <img src="../public/assets/media/events-imgs/4.png" alt="">
-                <h5>Rotana Saadiyat- Abu Dhabi</h5>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                <div>
-                    <p>12 Photos</p>
-                    <button>View More</button>
-                </div>
-            </div>
-            <div>
-                <img src="../public/assets/media/events-imgs/5.png" alt="">
-                <h5>Henna Nights</h5>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                <div>
-                    <p>12 Photos</p>
-                    <button>View More</button>
-                </div>
-            </div>
-            <div>
-                <img src="../public/assets/media/events-imgs/6.png" alt="">
-                <h5>Rotana Saadiyat- Abu Dhabi</h5>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                <div>
-                    <p>12 Photos</p>
-                    <button>View More</button>
-                </div>
-            </div>
-            <div>
-                <img src="../public/assets/media/events-imgs/7.png" alt="">
-                <h5>Rotana Saadiyat- Abu Dhabi</h5>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                <div>
-                    <p>12 Photos</p>
-                    <button>View More</button>
-                </div>
-            </div>
-            <div>
-                <img src="../public/assets/media/events-imgs/8.png" alt="">
-                <h5>Rotana Saadiyat- Abu Dhabi</h5>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                <div>
-                    <p>12 Photos</p>
-                    <button>View More</button>
-                </div>
-            </div>
-        </div>
-        <button class="view-more-btn">View More</button>
-    </section>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Events</title>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../public/css/photogallery.css" />
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script
+			src="https://code.jquery.com/jquery-3.7.1.js"
+			integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+			crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<%- include('partials/header') %>
 
-    <%- include('partials/footer') %>
+		<section id="PhotoGalleryMainSection">
+			<h3 class="event-heading">Events</h3>
+			<!-- Categories -->
+			<h4>Henna Nights</h4>
+			<div class="photo-gallery-main-container new-event-container" data-aos="zoom-in">
+				<img src="../public/assets/media/new-events-imgs/e1/1.jpeg" alt="" /><img
+					src="../public/assets/media/new-events-imgs/e1/2.jpeg"
+					alt="" /><img src="../public/assets/media/new-events-imgs/e1/3.jpeg" alt="" /><img
+					src="../public/assets/media/new-events-imgs/e1/4.jpeg"
+					alt="" /><img src="../public/assets/media/new-events-imgs/e1/5.jpeg" alt="" /><img
+					src="../public/assets/media/new-events-imgs/e1/6.jpeg"
+					alt="" /><img src="../public/assets/media/new-events-imgs/e1/7.jpeg" alt="" /><img
+					src="../public/assets/media/new-events-imgs/e1/8.jpeg"
+					alt="" /><img
+					src="../public/assets/media/new-events-imgs/e1/9.jpeg"
+					alt="" />
+			</div>
 
-</body>
+			<h4>Desi Gala</h4>
+			<div class="photo-gallery-main-container new-event-container" data-aos="zoom-in">
+				<img src="../public/assets/media/new-events-imgs/e2/1.jpeg" alt="" /><img
+					src="../public/assets/media/new-events-imgs/e2/2.jpeg"
+					alt="" /><img src="../public/assets/media/new-events-imgs/e2/3.jpeg" alt="" /><img
+					src="../public/assets/media/new-events-imgs/e2/4.jpeg"
+					alt="" /><img src="../public/assets/media/new-events-imgs/e2/5.jpeg" alt="" /><img
+					src="../public/assets/media/new-events-imgs/e2/6.jpeg"
+					alt="" /><img src="../public/assets/media/new-events-imgs/e2/7.jpeg" alt="" /><img
+					src="../public/assets/media/new-events-imgs/e2/8.jpeg"
+					alt="" /><img src="../public/assets/media/new-events-imgs/e2/9.jpeg" alt="" /><img
+					src="../public/assets/media/new-events-imgs/e2/10.jpeg"
+					alt="" /><img src="../public/assets/media/new-events-imgs/e2/11.jpeg" alt="" /><img
+					src="../public/assets/media/new-events-imgs/e2/12.jpeg"
+			</div>
+
+			<button class="view-more-btn" >View More</button>
+		</section>
+
+		<%- include('partials/footer') %>
+	</body>
+
+	<script>
+		AOS.init()
+	</script>
+	<script src="../public/js/viewmorebtn.js"></script>
 </html>
 
-<!-- <script src="../public/js/refLine.js"></script> -->
+<script src="../public/js/refLine.js"></script>
