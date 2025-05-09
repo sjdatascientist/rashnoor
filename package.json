@@ -1,5 +1,5 @@
 {
-  "name": "wedding",
+  "name": "rashnoor",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -14,7 +14,8 @@
   "type": "commonjs",
   "dependencies": {
     "ejs": "^3.1.10",
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.9"
